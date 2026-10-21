@@ -1,4 +1,4 @@
-# chunkaichen
+# k41studio.com
 
 Personal portfolio website, built to learn Angular, TypeScript on AWS Lambda, and AWS.
 
@@ -16,7 +16,8 @@ Personal portfolio website, built to learn Angular, TypeScript on AWS Lambda, an
 
 ```mermaid
 flowchart LR
-    User((User)) --> CF[CloudFront]
+    User((User)) -->|k41studio.com| R53[Route 53]
+    R53 -->|alias record| CF[CloudFront]
     CF -->|static assets| S3[(S3, private<br/>Angular app)]
     CF -->|images| IMG[(S3, private<br/>fish images)]
     CF -->|/api| APIGW[API Gateway<br/>HTTP API]
@@ -27,6 +28,7 @@ flowchart LR
     LPOST -->|upload| IMG
 ```
 
+- **Domain:** `k41studio.com`, registered and DNS-hosted in Route 53. Alias records point the root domain and `www` to CloudFront. The HTTPS certificate comes from ACM in us-east-1.
 - **Frontend:** Angular, hosted in S3
 - **Backend:** TypeScript (Node.js) Lambda functions behind API Gateway (HTTP API), one per endpoint. The functions run outside a VPC and reach S3 and DynamoDB through IAM permissions.
 - **Storage:** Fish images go in S3. DynamoDB holds each fish's metadata plus its S3 object key (not a full URL).

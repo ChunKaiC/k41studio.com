@@ -37,7 +37,8 @@ Rough estimate: about 3 weeks at 2–3 hours a day.
 
 ## Domain
 
-- [ ] Register a new domain through Route 53, with auto-renew on
+- [x] Register `k41studio.com` through Route 53
+- [ ] Confirm registration completed, verify the contact email, and check that auto-renew is on
 - [ ] ACM certificate in us-east-1, validated through Route 53
 - [ ] Attach the domain to CloudFront with alias records for the root domain and `www`
 
