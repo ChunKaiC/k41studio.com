@@ -2,6 +2,10 @@
 
 Newest first. Only the latest entry is loaded as context for the next session (see `CLAUDE.md`).
 
+## 2026-10-26
+
+- Added a placeholder `index.html` at the repo root: a centered "K41 Studio, under construction" page with no dependencies and light/dark support. It's meant to be uploaded to the site's S3 bucket until the Angular app is ready.
+
 ## 2026-10-21
 
 - Wiped the old Flutter project from the repo and restarted it as a portfolio site for learning Angular and AWS.
