@@ -5,6 +5,7 @@ Newest first. Only the latest entry is loaded as context for the next session (s
 ## 2026-10-26
 
 - Added a placeholder `index.html` at the repo root: a centered "K41 Studio, under construction" page with no dependencies and light/dark support. It's meant to be uploaded to the site's S3 bucket until the Angular app is ready.
+- Installed AWS CLI 2.38.5 and SAM CLI 1.170.0 with Homebrew. Node.js 24.19.0 (npm 11.17.0, via nvm) and Angular CLI 21.2.20 were already installed. Docker isn't installed yet, and `sam local start-api` will need it in Week 2.
 
 ## 2026-10-21
 

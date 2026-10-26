@@ -6,9 +6,9 @@ Rough estimate: about 3 weeks at 2–3 hours a day.
 
 - [x] Wipe repo and document the architecture (`README.md`)
 - [x] Turn on MFA for the AWS root user
-- [ ] Create an admin user in IAM Identity Center and stop using the root user
-- [ ] Confirm the budget alert covers actual and forecasted spend
-- [ ] Install AWS CLI, SAM CLI, Node.js and Angular CLI
+- [x] Create an admin user in IAM Identity Center and stop using the root user
+- [x] Confirm the budget alert covers actual and forecasted spend
+- [x] Install AWS CLI, SAM CLI, Node.js and Angular CLI
 
 ## Week 1: Static site live
 
